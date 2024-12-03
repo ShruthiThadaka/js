@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#main{
+    width: 500px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+#sub{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+button,#save,#previous{
+    width: 450px;
+    height: 50px;
+    background-color: rgb(123, 123, 192);
+    color: white;
+}
+#save,#previous{
+    margin-top: 20px;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Advanced JavaScript Quiz</h1>
+        <p>Time:</p>
+        <p>Question 2/3</p>
+        <label for="question">Which keyword is used to declare a constant variable in JavaScript?</label>
+        <div id="sub">
+            <button id="option1">var</button>
+            <button id="option2">let</button>
+            <button id="option3">const</button>
+        </div>
+        <button id="previous">Previous</button>
+        <button id="save">Save and Next</button>
+    </div>
+    
+
+        
+    <script>
+        const btn1 = document.getElementById("option1");
+        const btn2 = document.getElementById("option2");
+        const btn3 = document.getElementById("option3");
+        const save = document.getElementById("save");
+        const previous = document.getElementById("save");
+
+        let answer = "const";
+        btn1.addEventListener("click",()=>{
+            btn1.style.borderColor="green";
+            }
+        )
+
+        save.addEventListener("click",()=>{
+            window.location.href="http://127.0.0.1:5500/third.html";
+        })
+
+        previous.addEventListener("click",()=>{
+            window.location.href="http://127.0.0.1:5500/startquiz.html";
+        })
+
+
+
+
+
+        
+    </script>
+</body>
+</html>
